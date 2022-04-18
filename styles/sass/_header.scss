@@ -1,0 +1,19 @@
+header {
+   height: 100vh;
+   background: lightgray;
+
+   ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      
+      li {
+         padding: 1.5rem 0 1.5rem 2rem;
+         font-size: 0.8rem;
+      }
+   }
+
+   div {
+      margin: 10rem 0;
+   }
+}
