@@ -237,9 +237,24 @@ html {
 
 header {
   height: 100vh;
-  background: lightgray;
+  background-color: #3f3830;
+  background-image: url(./assets/bg-edit.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-header ul {
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav img {
+  max-width: 2rem;
+  margin-top: 1.5rem;
+}
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,12 +263,47 @@ header ul {
           justify-content: flex-end;
   margin: 0;
 }
-header ul li {
+header nav ul li {
   padding: 1.5rem 0 1.5rem 2rem;
   font-size: 0.8rem;
 }
-header div {
+header nav ul li a {
+  color: #e5d9cd;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: #afb1a1;
+}
+header .header-div {
   margin: 10rem 0;
+}
+header .header-div .header-line {
+  width: 3rem;
+  border-bottom: 2px solid #afb1a1;
+}
+header .header-div p {
+  color: #afb1a1;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+header .header-div h1 {
+  color: #e5d9cd;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+header .header-div a {
+  font-size: 0.7rem;
+  color: #3f3830;
+  background-color: #afb1a1;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+header .header-div a:hover {
+  background-color: #e5d9cd;
+  padding-right: 3rem;
 }
 
 html {
@@ -262,13 +312,15 @@ html {
 
 body {
   text-transform: uppercase;
+  letter-spacing: 3px;
   font-family: "Oswald", sans-serif;
 }
 
 li {
   list-style: none;
 }
-li a {
+
+a {
   text-decoration: none;
 }
 

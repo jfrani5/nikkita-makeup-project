@@ -1,19 +1,72 @@
 header {
    height: 100vh;
-   background: lightgray;
+   background-color: $dark;
+   background-image: url(./assets/bg-edit.PNG);
+   background-repeat: no-repeat;
+   background-position: center;
 
-   ul {
+   nav {
       display: flex;
-      justify-content: flex-end;
-      margin: 0;
+      justify-content: space-between;
+
+      img {
+         max-width: 2rem;
+         margin-top: 1.5rem;
+      }
+
+      ul {
+         display: flex;
+         justify-content: flex-end;
+         margin: 0;
       
-      li {
-         padding: 1.5rem 0 1.5rem 2rem;
-         font-size: 0.8rem;
+         li {
+            padding: 1.5rem 0 1.5rem 2rem;
+            font-size: 0.8rem;
+      
+            a {
+               color: $light;
+               transition: color 0.2s ease-in-out;
+            }
+
+            a:hover,
+            a:focus {
+               color: $greenish;
+            }
+         }
       }
    }
 
-   div {
+   .header-div {
       margin: 10rem 0;
+
+      .header-line {
+         width: 3rem;
+         border-bottom: 2px solid $greenish;
+      }
+
+      p {
+         color: $greenish;
+         font-size: 0.8rem;
+         margin-bottom: 0;
+      }
+
+      h1 {
+         color: $light;
+         font-size: 3.5rem;
+         margin-top: 1rem;
+      }
+
+      a {
+         font-size: 0.7rem;
+         color: $dark;
+         background-color: $greenish;
+         padding: 1rem 2rem;
+         transition: all 0.2s linear;
+      }
+
+      a:hover {
+         background-color: $light;
+         padding-right: 3rem;
+      }
    }
 }

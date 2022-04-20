@@ -1,4 +1,8 @@
-
+// COLORS
+$dark: #3f3830;
+$light: #e5d9cd;
+$greenish: #afb1a1;
+$greener: #6c7972;
 
 // IMPORTS
 @import "setup";
@@ -6,22 +10,23 @@
 
 
 
-
+// GENERAL STYLES
 html {
    font-size: 125%;
 }
 
 body {
    text-transform: uppercase;
-      font-family: 'Oswald', sans-serif;
+   letter-spacing: 3px;
+   font-family: 'Oswald', sans-serif;
 }
 
 li {
    list-style: none;
+}
 
-   a {
-      text-decoration: none;
-   }
+a {
+   text-decoration: none;
 }
 
 .wrapper {
@@ -29,3 +34,4 @@ li {
    width: 85%;
    margin: 0 auto;
 }
+
