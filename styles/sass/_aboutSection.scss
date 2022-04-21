@@ -1,0 +1,37 @@
+.about-section {
+   background-color: $light;
+
+   .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 5rem 0;
+
+      .img-div {
+         width: 48%;
+      
+         img {
+            width: 100%;
+         }
+      }
+      
+      .info-about {
+         width: 48%;
+
+         .first-para-about {
+            color: $greenish;
+         }
+
+         h2 {
+            font-size: 2rem;
+            color: $greener;
+         }
+
+         .about-para {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+            color: $greener
+         }
+      }
+   }
+}

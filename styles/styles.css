@@ -279,10 +279,6 @@ header nav ul li a:focus {
 header .header-div {
   margin: 10rem 0;
 }
-header .header-div .header-line {
-  width: 3rem;
-  border-bottom: 2px solid #afb1a1;
-}
 header .header-div p {
   color: #afb1a1;
   font-size: 0.8rem;
@@ -305,6 +301,83 @@ header .header-div a:hover {
   background-color: #e5d9cd;
   padding-right: 3rem;
 }
+header .header-arrow::after {
+  content: url("https://api.iconify.design/ic/baseline-keyboard-double-arrow-down.svg?color=%233f3830&width=50&height=50");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+  -webkit-animation: bounce 1.2s linear infinite;
+          animation: bounce 1.2s linear infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.about-section {
+  background-color: #e5d9cd;
+}
+.about-section .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0;
+}
+.about-section .about-container .img-div {
+  width: 48%;
+}
+.about-section .about-container .img-div img {
+  width: 100%;
+}
+.about-section .about-container .info-about {
+  width: 48%;
+}
+.about-section .about-container .info-about .first-para-about {
+  color: #afb1a1;
+}
+.about-section .about-container .info-about h2 {
+  font-size: 2rem;
+  color: #6c7972;
+}
+.about-section .about-container .info-about .about-para {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #6c7972;
+}
 
 html {
   font-size: 125%;
@@ -316,12 +389,22 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+p {
+  text-transform: none;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+hr {
+  width: 3rem;
+  border: 1px solid #afb1a1;
+  margin: 0;
 }
 
 .wrapper {

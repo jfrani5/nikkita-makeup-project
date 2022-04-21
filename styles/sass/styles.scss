@@ -7,6 +7,8 @@ $greener: #6c7972;
 // IMPORTS
 @import "setup";
 @import "header";
+@import "animations";
+@import "aboutSection";
 
 
 
@@ -21,12 +23,22 @@ body {
    font-family: 'Oswald', sans-serif;
 }
 
+p {
+   text-transform: none;
+}
+
 li {
    list-style: none;
 }
 
 a {
    text-decoration: none;
+}
+
+hr {
+   width: 3rem;
+   border: 1px solid $greenish;
+   margin: 0;
 }
 
 .wrapper {
