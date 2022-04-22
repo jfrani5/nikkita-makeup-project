@@ -9,6 +9,8 @@ $greener: #6c7972;
 @import "header";
 @import "animations";
 @import "aboutSection";
+@import "portfolioSection";
+@import "servicesSection";
 
 
 
@@ -23,8 +25,14 @@ body {
    font-family: 'Oswald', sans-serif;
 }
 
+h2 {
+   font-size: 2rem;
+   color: $greener;
+}
+
 p {
    text-transform: none;
+   color: $greenish;
 }
 
 li {

@@ -1,0 +1,29 @@
+.services-section {
+   background-color: white;
+   padding: 5rem 0;
+
+   .second-container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      .first-service,
+      .second-service {
+         width: 48%;
+         position: relative;
+
+         img {
+            width: 100%;
+         }
+
+         p {
+            padding: 1rem 2rem;
+            background: black;
+            width: 25rem;
+            position: absolute;
+            top: 16.5rem;
+            right: 1.8rem;
+         }
+      }
+   }
+}

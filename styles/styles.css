@@ -365,18 +365,87 @@ header .header-arrow::after {
 }
 .about-section .about-container .info-about {
   width: 48%;
-}
-.about-section .about-container .info-about .first-para-about {
-  color: #afb1a1;
-}
-.about-section .about-container .info-about h2 {
-  font-size: 2rem;
-  color: #6c7972;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .about-section .about-container .info-about .about-para {
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: #6c7972;
+}
+
+.portfolio-section {
+  background-color: whitesmoke;
+  padding: 5rem 0;
+}
+.portfolio-section .portfolio-text {
+  margin-bottom: 2rem;
+}
+.portfolio-section .portfolio-text .portfolio-para {
+  margin: 0;
+}
+.portfolio-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3rem;
+}
+.portfolio-section ul li {
+  width: calc(33% - 1rem);
+  margin: 1rem 0;
+}
+.portfolio-section ul li img {
+  width: 100%;
+  height: 20rem;
+}
+.portfolio-section .portfolio-anchor {
+  text-align: right;
+  margin-top: 5rem;
+}
+.portfolio-section .portfolio-anchor a {
+  color: #6c7972;
+}
+.portfolio-section .portfolio-anchor::after {
+  content: url("https://api.iconify.design/akar-icons/arrow-right.svg?color=%236c7972&width=25&height=25");
+  position: relative;
+  top: 4px;
+}
+
+.services-section {
+  background-color: white;
+  padding: 5rem 0;
+}
+.services-section .second-container {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services-section .second-container .first-service,
+.services-section .second-container .second-service {
+  width: 48%;
+  position: relative;
+}
+.services-section .second-container .first-service img,
+.services-section .second-container .second-service img {
+  width: 100%;
+}
+.services-section .second-container .first-service p,
+.services-section .second-container .second-service p {
+  padding: 1rem 2rem;
+  background: black;
+  width: 25rem;
+  position: absolute;
+  top: 16.5rem;
+  right: 1.8rem;
 }
 
 html {
@@ -389,8 +458,14 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #6c7972;
+}
+
 p {
   text-transform: none;
+  color: #afb1a1;
 }
 
 li {
