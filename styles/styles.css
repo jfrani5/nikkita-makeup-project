@@ -489,6 +489,53 @@ header .header-arrow::after {
   margin: 1.7rem;
 }
 
+.contact-section {
+  background-color: #3f3830;
+  padding: 3rem 0;
+}
+.contact-section .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.contact-section .contact-container .bio-contact {
+  width: 40%;
+}
+.contact-section .contact-container .bio-contact h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.contact-section .contact-container .contact-div {
+  width: 20%;
+}
+.contact-section .contact-container p {
+  font-size: 0.8rem;
+}
+.contact-section .contact-container h4,
+.contact-section .contact-container h5,
+.contact-section .contact-container i {
+  color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+  background-color: #3f3830;
+  border-top: 1px solid #e5d9cd;
+}
+footer p {
+  font-size: 0.6rem;
+  margin: 0;
+  padding: 1rem 0;
+}
+
 html {
   font-size: 125%;
 }
